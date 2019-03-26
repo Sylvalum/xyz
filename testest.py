@@ -1,9 +1,17 @@
-from bottle import route, run, template
+from bottle import Bottle, route, run, template
 
-@route('/sum/<num1>/<num2>')
-def index(num1, num2):
+app = Bottle()
+
+@app.route('/sum/<num1>/<num2>')
+def sum(num1, num2):
     total = str(int(num1) + int(num2))
-    logging.info(total)
+    print(total)
     return template('<b>{{total}}</b>', total=total)
 
-run(host='localhost', port=8080)
+@app.route('/sub/<num1>/<num2>')
+def sub(num1, num2):
+    total = str(int(num1) - int(num2))
+    print(total)
+    return template('<b>{{total}}</b>', total=total)
+
+run(app, host='localhost', port=8080)
