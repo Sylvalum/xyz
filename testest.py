@@ -4,6 +4,10 @@ import os, time
 
 app = Bottle()
 
+@app.route('/')
+def home():
+	return template('home')
+
 @app.route('/sum/<num1>/<num2>')
 def sum(num1, num2):
     total = str(int(num1) + int(num2))
@@ -20,7 +24,7 @@ def sub(num1, num2):
 def asdf():
 	time.sleep(10)
 	return 'hola'
-	
+
 @app.get('/david')
 def asdf():
 	return template('template_david')
