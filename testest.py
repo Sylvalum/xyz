@@ -23,7 +23,6 @@ def asdf():
 	
 @app.get('/david')
 def asdf():
-	time.sleep(10)
 	return 'Adoro Koiki. ♥'
 
 port = os.environ.get('PORT', 5000)
