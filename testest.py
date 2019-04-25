@@ -1,6 +1,7 @@
 from bottle import Bottle, route, run, template
 from gevent import monkey; monkey.patch_all()
 import os, time
+% include('template_david.tpl', title='~ David ~')
 
 app = Bottle()
 
