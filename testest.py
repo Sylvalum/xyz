@@ -1,4 +1,5 @@
 from bottle import Bottle, route, run, template
+from gevent import monkey; monkey.patch_all()
 import os, time
 
 app = Bottle()
@@ -21,4 +22,4 @@ def asdf():
 	return 'hola'
 
 port = os.environ.get('PORT', 5000)
-run(app, host='0.0.0.0', port=port)
+run(app, host='0.0.0.0', port=port, server='gevent')
