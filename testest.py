@@ -23,7 +23,7 @@ def asdf():
 	
 @app.get('/david')
 def asdf():
-	return 'Adoro Koiki. ♥'
+	return template('<font color="red">Adoro Koiki. ♥</font>')
 
 port = os.environ.get('PORT', 5000)
 run(app, host='0.0.0.0', port=port, server='gevent')
