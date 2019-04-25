@@ -7,5 +7,7 @@
 .cs {
   font-family: "Comic Sans MS";
   color: #FABADA;
+  width: 50%;
+  height: 50%;
 }
 </style>
