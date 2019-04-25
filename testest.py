@@ -1,4 +1,5 @@
 from bottle import Bottle, route, run, template
+import os
 
 app = Bottle()
 
@@ -14,4 +15,5 @@ def sub(num1, num2):
     print(total)
     return template('<b>{{total}}</b>', total=total)
 
-run(app, host='localhost', port=8080)
+port = os.environ.get('PORT', 5000)
+run(app, host='localhost', port=port)
