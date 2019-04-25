@@ -3,7 +3,7 @@
 <body>
 <div class="div">
 <marquee>
-<p class="cs">Tonto el que lo lea.</p>
+<p class="cs">Tonto el que lo lea. 👌</p>
 </marquee>
 </div>
 </body>
