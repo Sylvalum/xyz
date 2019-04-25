@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <body>
 <div class="div">
 <marquee>
@@ -24,3 +26,4 @@ body {
   font-size: 18pt;
 }
 </style>
+</html>
