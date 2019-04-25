@@ -1,0 +1,1 @@
+<font color="red">Adoro Koiki. ♥</font>
