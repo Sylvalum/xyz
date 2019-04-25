@@ -20,6 +20,11 @@ def sub(num1, num2):
 def asdf():
 	time.sleep(10)
 	return 'hola'
+	
+@app.get('/david')
+def asdf():
+	time.sleep(10)
+	return 'Adoro Koiki. ♥'
 
 port = os.environ.get('PORT', 5000)
 run(app, host='0.0.0.0', port=port, server='gevent')
