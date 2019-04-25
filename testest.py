@@ -16,4 +16,4 @@ def sub(num1, num2):
     return template('<b>{{total}}</b>', total=total)
 
 port = os.environ.get('PORT', 5000)
-run(app, host='localhost', port=port)
+run(app, host='0.0.0.0', port=port)
