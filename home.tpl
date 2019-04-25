@@ -3,7 +3,7 @@
 <body>
 <div class="div">
 <marquee>
-<p class="cs">Tonto el que lo lea. 👌</p>
+<p class="cs">Tonto el que lo lea. <span class="normal">👌</span></p>
 </marquee>
 </div>
 </body>
@@ -24,6 +24,9 @@ body {
   color: #FABADA;
   font-style: italic;
   font-size: 18pt;
+}
+.normal {
+  font-style: normal;
 }
 </style>
 </html>
