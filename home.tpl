@@ -5,7 +5,7 @@
 <head profile="http://www.w3.org/2005/10/profile">
 <link rel="icon" 
       type="image/png" 
-      src="/favicon.png">
+      src="/img/favicon.png">
 <body>
 <div class="div">
 <marquee>
